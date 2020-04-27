@@ -391,3 +391,27 @@ ggplot2::autoplot(mb2)
 mb3
 ggplot2::autoplot(mb3)
 
+
+
+
+
+
+temp = tmpm(dx[1:1000, ], ILex = 9)$pDeath
+all.equal(temp, tmpm2(dx[1:1000, ])$pDeath )  #same results
+all.equal(temp, tmpm3(dx[1:1000, ])$pDeath )  #same results
+all.equal(temp, tmpm4(dx[1:1000, ]) )  #same results
+all.equal(temp, tmpm4p(dx[1:1000, ]) )  #same results
+all.equal(temp, tmpm5(dx[1:1000, ]) )  #same results
+all.equal(temp, tmpm5p(dx[1:1000, ]) )  #same results
+
+
+# 
+# 
+# 
+# library(lineprof)
+# v4 = lineprof( tmpm4(dx[1:1000, ])  )
+# 
+# v4p = lineprof( tmpm4p(dx[1:1000, ])  )
+# 
+# v5 = lineprof( tmpm5(dx[1:1000, ])  )
+# v5p = lineprof( tmpm5p(dx[1:1000, ])  )
