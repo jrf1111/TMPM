@@ -1,0 +1,15 @@
+Package: TMPM2
+Title: Calculate the Trauma Mortality Prediction Model (TMPM) Faster than the Original Package (tmpm)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jacob",
+           family = "Roden-Formean",
+           role = c("aut", "cre"),
+           email = "JakeRodenForeman@gmail.com",
+           comment = c(ORCID = "0000-0002-8338-397X"))
+Description: This package calculates the Trauma Mortality Prediction Model (TMPM).  It is an update to the original package [tmpm](https://CRAN.R-project.org/package=tmpm), which was slower, did not fully support TMPM based on ICD10, and produced some erroneous results.
+License: use_gpl3_license()
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
